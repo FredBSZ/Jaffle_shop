@@ -1,4 +1,3 @@
-
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
@@ -36,12 +35,23 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
+<<<<<<< HEAD
   marts:
     +materialized: table
 
+=======
+  Jaffle_shop:
+    +required_docs: true
+    models:
+      +materialized: table
+>>>>>>> 6b27c9f379c78a80bacfdba56f3fb8c84eb0240b
   
 
       
+
+ 
+
+
 
  
 
