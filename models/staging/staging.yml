@@ -1,0 +1,22 @@
+models:
+  - name: stg_orders
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique:
+              config:
+                severity: warn
+                error_if: ">10"
+                warn_if: ">1"
+                
+          
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+          
+
+    
