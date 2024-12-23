@@ -19,5 +19,36 @@ models:
           - not_null
           - unique
           
+  - name: stg_items
+    columns:
+      - name: item_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_products
+    columns:
+      - name: sku
+        tests:
+          - unique
+          - not_null
 
+  - name: stg_stores
+    columns:
+      - name: store_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_supplies
+    columns:
+      - name: supplies_id
+        tests:
+          - unique
+          - not_null
+          
+          
+
+          
+          
+              
+              
     
