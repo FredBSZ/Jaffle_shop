@@ -9,3 +9,9 @@ sources:
         - name: products
         - name: stores
         - name: supplies
+
+  - name: stripe
+    database: RAW
+    schema: STRIPE
+    tables:
+      - name: payment
