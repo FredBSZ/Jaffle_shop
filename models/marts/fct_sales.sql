@@ -1,3 +1,7 @@
+{#
+{{config(schema='BEBESSE')}}
+#}
+
 with orders as
 (select * from {{ ref('stg_orders') }}),
 

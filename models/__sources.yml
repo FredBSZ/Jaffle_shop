@@ -4,6 +4,15 @@ sources:
     schema: JAFFLE_SHOP
     tables:
         - name: orders
+          freshness:
+            warn_after:
+              count: 10
+              period: day
+            error_after:
+              count: 11
+              period: day
+          loaded_at_field: ordered_at
+          
         - name: customers
         - name: items
         - name: products
